@@ -36,18 +36,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let user = post["author"] as! PFUser
             cell.usernameLabel.text = user.username
-            cell.captionLabel.text = post["caption"] as! String
+            cell.captionLabel.text = post["caption"] as? String
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url!
             let url = URL(string: urlString)!
             
-            cell.photoView.af_setImage(withURL: url)
+            cell.photoView.af.setImage(withURL: url)
             
             return cell
         }else if indexPath.row <= comments.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
             let comment = comments[indexPath.row - 1]
-            cell.NameLabel.text = comment["text"] as? String
+            cell.CommentLabel.text = comment["text"] as? String
             let user = comment["author"] as! PFUser
             cell.NameLabel.text = user.username
             
@@ -88,7 +88,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         //create the comment
         let comment = PFObject(className: "Comments")
-        
+        print(comment)
         comment["text"] = text
         comment["post"] = selectedPost
         comment["author"] = PFUser.current()!

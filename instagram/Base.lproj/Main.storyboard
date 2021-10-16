@@ -179,15 +179,15 @@
                                             <outlet property="NameLabel" destination="5OB-Xe-yGh" id="D0s-9l-NQy"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="U4D-NN-LPs" customClass="AddCommentCell">
-                                        <rect key="frame" x="0.0" y="412" width="414" height="37.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="U4D-NN-LPs">
+                                        <rect key="frame" x="0.0" y="412" width="414" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U4D-NN-LPs" id="Uvs-Jc-ePl">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-ef-g3o">
-                                                    <rect key="frame" x="16" y="8" width="390" height="21.5"/>
+                                                    <rect key="frame" x="16" y="8" width="390" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemGray2Color"/>
                                                     <nil key="highlightedColor"/>
